@@ -29,141 +29,102 @@ namespace Calculator
 
         private void one_Click(object sender, EventArgs e)
         {
+            num.Text = one.Text;
             //Num_Labelを上書きするか
             if (Label_overwrite == true)
             {
-                num.Text = one.Text;
                 Label_overwrite = false;
-            }
-            else
-            {
-                num.Text += one.Text;
             }
         }
 
         private void two_Click(object sender, EventArgs e)
         {
+            num.Text += two.Text;
             //Num_Labelを上書きするか
             if (Label_overwrite == true)
             {
-                num.Text = two.Text;
                 Label_overwrite = false;
-            }
-            else
-            {
-                num.Text += two.Text;
             }
         }
 
         private void three_Click(object sender, EventArgs e)
         {
+            num.Text += three.Text;
             //Num_Labelを上書きするか
             if (Label_overwrite == true)
             {
-                num.Text = three.Text;
                 Label_overwrite = false;
-            }
-            else
-            {
-                num.Text += three.Text;
             }
         }
 
         private void four_Click(object sender, EventArgs e)
         {
+            num.Text += four.Text;
             //Num_Labelを上書きするか
             if (Label_overwrite == true)
             {
-                num.Text = four.Text;
                 Label_overwrite = false;
-            }
-            else
-            {
-                num.Text += four.Text;
             }
         }
 
         private void five_Click(object sender, EventArgs e)
         {
+            num.Text += five.Text;
             //Num_Labelを上書きするか
             if (Label_overwrite == true)
             {
-                num.Text = five.Text;
                 Label_overwrite = false;
-            }
-            else
-            {
-                num.Text += five.Text;
             }
         }
 
         private void six_Click(object sender, EventArgs e)
         {
+            num.Text += six.Text;
             //Num_Labelを上書きするか
             if (Label_overwrite == true)
             {
-                num.Text = six.Text;
                 Label_overwrite = false;
-            }
-            else
-            {
-                num.Text += six.Text;
             }
         }
 
         private void seven_Click(object sender, EventArgs e)
         {
+            num.Text += seven.Text;
             //Num_Labelを上書きするか
             if (Label_overwrite == true)
             {
-                num.Text = seven.Text;
                 Label_overwrite = false;
-            }
-            else
-            {
-                num.Text += seven.Text;
             }
         }
 
         private void eight_Click(object sender, EventArgs e)
         {
+            num.Text += eight.Text;
             //Num_Labelを上書きするか
             if (Label_overwrite == true)
             {
-                num.Text = eight.Text;
                 Label_overwrite = false;
-            }
-            else
-            {
-                num.Text += eight.Text;
             }
         }
 
         private void nine_Click(object sender, EventArgs e)
         {
+            num.Text += nine.Text;
             //Num_Labelを上書きするか
             if (Label_overwrite == true)
             {
-                num.Text = nine.Text;
                 Label_overwrite = false;
-            }
-            else
-            {
-                num.Text += nine.Text;
             }
         }
 
         private void zero_Click(object sender, EventArgs e)
         {
+            num.Text += zero.Text;
             //Num_Labelを上書きするか
             if (Label_overwrite == true)
             {
                 num.Text = zero.Text;
                 Label_overwrite = false;
-            }
-            else
-            {
-                num.Text += zero.Text;
             }
         }
 
