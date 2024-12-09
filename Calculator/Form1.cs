@@ -14,6 +14,8 @@ namespace Calculator
 {
     public partial class Form1 : Form
     {
+        private static readonly log4net.ILog _logger = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         public Form1()
         {
             InitializeComponent();
@@ -123,7 +125,6 @@ namespace Calculator
             //Num_Labelを上書きするか
             if (Label_overwrite == true)
             {
-                num.Text = zero.Text;
                 Label_overwrite = false;
             }
         }
