@@ -43,6 +43,7 @@ namespace Calculatorusing
                 case MarksType.MULTIPLIED:
                     dNum_Pool *= dNum;
                     break;
+                // 小数点は5桁まで操作可能とする必要あり
                 case MarksType.DEVIDED:
                     dNum_Pool /= dNum; 
                     break;
