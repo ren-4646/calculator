@@ -9,15 +9,11 @@ namespace Calculatorusing
 
 {
 
-    class Calculate
+   public class Calculate
     {
-        //ラベルをdouble型に格納する変数
-        private double dNum;
-
-        //ラベルの数字をプールする変数
-        private double dNum_Pool;
-        public enum MarksType //列挙子
-        {
+        public double dNum_Pool { get; private set; }
+        public enum MarksType 
+        { 
             EQUAL,
             PLUS,
             MINUS,
@@ -25,19 +21,20 @@ namespace Calculatorusing
             DEVIDED,
             PERCENT
         }
-
-        private MarksType mType = MarksType.EQUAL;
-
-        // 演算子の計算処理
-        public void Num_PoolMethod(string text)
-        {
-            dNum = double.Parse(text);
-            switch (mType)
-            {
+        public MarksType mType = MarksType.EQUAL;
+        public void SetOperation(MarksType type)
+        { 
+            mType = type; 
+        }
+        public double Calculation(double dNum)
+        { 
+            // ログの書き込み処理が必要
+            switch (mType) 
+            { 
                 case MarksType.EQUAL:
                     dNum_Pool = dNum;
-                    break;
-                case MarksType.PLUS:
+                    break; 
+                case MarksType.PLUS: 
                     dNum_Pool += dNum;
                     break;
                 case MarksType.MINUS:
@@ -47,12 +44,12 @@ namespace Calculatorusing
                     dNum_Pool *= dNum;
                     break;
                 case MarksType.DEVIDED:
-                    dNum_Pool /= dNum;
-                    Math.Round(dNum_Pool, 6);
+                    dNum_Pool /= dNum; 
                     break;
-            }
-            //表示を更新
-            text = dNum_Pool.ToString();
+            } 
+            mType = MarksType.EQUAL;
+            return dNum_Pool;
         }
     }
 }
+
